@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+</head>
+<body>
+    <div>
+        <h2>Thêm sinh viên</h2>
+        <form>
+            <label for="StudentID">Mã sinh viên:</label><br>
+            <input type="text" id="StudentID" name="StudentID" required><br>
+
+            <label for="StudentName">Họ và tên:</label><br>
+            <input type="text" id="StudentName" name="StudentName" required><br>
+
+            <label for="StudentEmail">Email:</label><br>
+            <input type="email" id="StudentEmail" name="StudentEmail" required><br>
+
+            <label for="StudentDoB">Ngày sinh:</label><br>
+            <input type="date" id="StudentDoB" name="StudentDoB"><br>
+
+            <label>Giới tính:</label><br>
+            <label><input type="radio" name="StudentGender" value="Nam" required> Nam</label>
+            <label><input type="radio" name="StudentGender" value="Nữ"> Nữ</label><br>
+
+            <label for="StudentNote">Ghi chú:</label><br>
+            <textarea id="StudentNote" name="StudentNote" rows="4"></textarea><br>
+
+            <button type="submit">Thêm sinh viên</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Danh sách sinh viên</h2>
+        <table border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã sinh viên</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>SV001</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>nguyenvana@gmail.com</td>
+                    <td>Nam</td>
+                    <td>2000-01-15</td>
+                    <td>
+                        <a href="edit.html?StudentID=SV001">Sửa</a>
+                        <a href="delete.html?StudentID=SV001">Xoá</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SV002</td>
+                    <td>Trần Thị B</td>
+                    <td>tranb@gmail.com</td>
+                    <td>Nữ</td>
+                    <td>2001-05-20</td>
+                    <td>
+                        <a href="edit.html?StudentID=SV002">Sửa</a>
+                        <a href="delete.html?StudentID=SV002">Xoá</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SV003</td>
+                    <td>Lê Văn C</td>
+                    <td>levanc@gmail.com</td>
+                    <td>Nam</td>
+                    <td>1999-12-10</td>
+                    <td>
+                        <a href="edit.html?StudentID=SV003">Sửa</a>
+                        <a href="delete.html?StudentID=SV003">Xoá</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
