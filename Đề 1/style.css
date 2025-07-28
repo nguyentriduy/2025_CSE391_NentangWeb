@@ -1,0 +1,33 @@
+/* Màu nền nhẹ */
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Bảng: căn giữa theo chiều dọc, khoảng cách đều */
+.table th, .table td {
+  vertical-align: middle;
+  padding: 12px 16px;
+  font-size: 15px;
+}
+
+/* Label trong form */
+.modal .form-label {
+  font-weight: 500;
+}
+
+/* Góc bo cho header bảng */
+.header-bar {
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+/* Hiệu ứng hover cho biểu tượng thao tác */
+.table i {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.table i:hover {
+  transform: scale(1.1);
+}
